@@ -5,7 +5,7 @@ import signup
 def home_content():
     #Home_window
     window_home = Tk()
-    window_home.geometry("1000x600")
+    window_home.geometry("1440x1080")
     window_home.configure(bg = "#ffffff")
     #functions
     def open_signup_page():

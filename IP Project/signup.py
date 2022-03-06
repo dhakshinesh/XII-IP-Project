@@ -24,12 +24,12 @@ def signup_content():
         relief = "ridge")
     canvas.place(x = 0, y = 0)
 
-    background_img = PhotoImage(file = f"background.png")
+    background_img = PhotoImage(file = f"IP Project/background.png")
     background = canvas.create_image(
         500.0, 300.0,
         image=background_img)
 
-    img0 = PhotoImage(file = f"img0.png")
+    img0 = PhotoImage(file = f"IP Project/img0.png")
     b0 = Button(
         image = img0,
         borderwidth = 0,
@@ -42,7 +42,7 @@ def signup_content():
         width = 171,
         height = 44)
 
-    entry0_img = PhotoImage(file = f"img_textBox0.png")
+    entry0_img = PhotoImage(file = f"IP Project/img_textBox0.png")
     entry0_bg = canvas.create_image(
         525.5, 244.0,
         image = entry0_img)
@@ -57,7 +57,7 @@ def signup_content():
         width = 339.0,
         height = 64)
 
-    entry1_img = PhotoImage(file = f"img_textBox1.png")
+    entry1_img = PhotoImage(file = f"IP Project/img_textBox1.png")
     entry1_bg = canvas.create_image(
         525.5, 350.0,
         image = entry1_img)
@@ -72,7 +72,7 @@ def signup_content():
         width = 339.0,
         height = 64)
 
-    entry2_img = PhotoImage(file = f"img_textBox2.png")
+    entry2_img = PhotoImage(file = f"IP Project/img_textBox2.png")
     entry2_bg = canvas.create_image(
         525.5, 456.0,
         image = entry2_img)
@@ -87,7 +87,7 @@ def signup_content():
         width = 339.0,
         height = 64)
 
-    img1 = PhotoImage(file = f"img1.png")
+    img1 = PhotoImage(file = f"IP Project/img1.png")
     b1 = Button(
         image = img1,
         borderwidth = 0,

@@ -1,5 +1,6 @@
 from tkinter import *
 import home
+from project_db import my_connect  
 
 def signup_content():
     #signup_window
@@ -13,6 +14,28 @@ def signup_content():
 
     def submit_info():
         print("username:",entry0.get(),"password:",entry1.get(),"Confirm Password:",entry2.get())
+        #user values
+        username = entry0.get()
+        password = entry1.get()
+        confirm_password = entry2.get()
+        #if password and confirm passwords match:
+        if password == confirm_password:
+            my_conn = my_connect.cursor()
+            my_conn.execute("SELECT username FROM users")
+            usernames = my_conn.fetchall()
+            print(usernames)
+            for db_username in usernames:
+                db_username_converted = list(db_username)
+                if db_username_converted[0] == username:
+                    print("user already exists")
+                    break
+            else:    
+                #inserting username, password values to database
+                sql = "INSERT INTO users (username, password) VALUES (%s, %s)"
+                val = (username, password)
+                my_conn.execute(sql, val)
+                my_connect.commit()
+                print(my_conn.rowcount, "record inserted.")
 
     canvas = Canvas(
         window_signup,

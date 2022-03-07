@@ -1,5 +1,5 @@
 from tkinter import *
-import home
+import home_page as home 
 from project_db import my_connect  
 
 def signup_content():

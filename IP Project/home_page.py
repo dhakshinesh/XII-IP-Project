@@ -22,12 +22,12 @@ def home_content():
         relief = "ridge")
     canvas.place(x = 0, y = 0)
 
-    background_img = PhotoImage(file = f"D:\BUSINEESN APPLICATION PROJECT\GUI FLODER FROM FIGMA AND PROXLIGHT\Proxlight_Designer_Export\Proxlight_Designer_Export/background.png")
+    background_img = PhotoImage(file = f"IP Project/assets/background.png")
     background = canvas.create_image(
         293.0, 368.5,
         image=background_img)
 
-    img0 = PhotoImage(file = f"D:\BUSINEESN APPLICATION PROJECT\GUI FLODER FROM FIGMA AND PROXLIGHT\Proxlight_Designer_Export\Proxlight_Designer_Export/img0.png")
+    img0 = PhotoImage(file = f"IP Project/assets/img0.png")
     b0 = Button(
         image = img0,
         borderwidth = 0,
@@ -40,7 +40,7 @@ def home_content():
         width = 162,
         height = 63)
 
-    img1 = PhotoImage(file = f"D:\BUSINEESN APPLICATION PROJECT\GUI FLODER FROM FIGMA AND PROXLIGHT\Proxlight_Designer_Export\Proxlight_Designer_Export/img1.png")
+    img1 = PhotoImage(file = f"IP Project/assets/img1.png")
     b1 = Button(
         image = img1,
         borderwidth = 0,
@@ -53,7 +53,7 @@ def home_content():
         width = 214,
         height = 80)
 
-    img2 = PhotoImage(file = f"D:\BUSINEESN APPLICATION PROJECT\GUI FLODER FROM FIGMA AND PROXLIGHT\Proxlight_Designer_Export\Proxlight_Designer_Export\img2.png")
+    img2 = PhotoImage(file = f"IP Project/assets/img2.png")
     b2 = Button(
         image = img2,
         borderwidth = 0,
@@ -66,7 +66,7 @@ def home_content():
         width = 222,
         height = 88)
 
-    img3 = PhotoImage(file = f"D:\BUSINEESN APPLICATION PROJECT\GUI FLODER FROM FIGMA AND PROXLIGHT\Proxlight_Designer_Export\Proxlight_Designer_Export/img3.png")
+    img3 = PhotoImage(file = f"IP Project/assets/img3.png")
     b3 = Button(
         image = img3,
         borderwidth = 0,
